@@ -1,0 +1,91 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+.body{
+    background-color: darkgreen;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inst{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    font-size: 25px;
+}
+
+#board{
+    position:fixed;
+    background: linear-gradient(green,yellow);
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background: linear-gradient(red,yellow);
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 100px;
+    font-size: 39px;
+    font-weight: bold;
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(red,purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+
+#but{
+    position: absolute;
+    top:250px;
+    left: 25px;
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+}
+
+#th{
+    position: absolute;
+    left: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+#but_dar{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    font-size: 15px;
+    width: 45px;
+    cursor: pointer;
+}
+
+#but_lig{
+    position: absolute;
+    left: 55px;
+    bottom: 5px;
+    font-size: 15px;
+    width: 45px;
+    cursor: pointer;
+}
